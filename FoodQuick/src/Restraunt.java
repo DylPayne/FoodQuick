@@ -40,7 +40,7 @@ public class Restraunt {
 		String restrauntContactNumberInput = sc.nextLine();
 		
 
-		BufferedReader reader = new BufferedReader(new FileReader("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("restraunts.txt"));
 		int count = 0;
 		while (reader.readLine() != null) {
 			count = count + 1;
@@ -50,7 +50,7 @@ public class Restraunt {
 		String txtFileString = "\n" + count + "," + restrauntNameInput + "," + restrauntLocationInput + "," + restrauntContactNumberInput;
 		
 		try {
-			FileWriter file = new FileWriter("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt", true);
+			FileWriter file = new FileWriter("restraunts.txt", true);
 			file.write(txtFileString);
 			file.close();
 		} catch (Exception e) {
@@ -64,7 +64,7 @@ public class Restraunt {
 		
 		Dictionary<String, List<String>> restraunts = new Hashtable<String, List<String>>();
 		
-		File file = new File("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt");
+		File file = new File("restraunts.txt");
 		Scanner sc = new Scanner(file);
 		while (sc.hasNext()) {
 			String tempArray[] = sc.nextLine().split(",");
@@ -82,7 +82,7 @@ public class Restraunt {
 	static void locations(int len) {
 		
 		try {
-			File file = new File("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt");
+			File file = new File("restraunts.txt");
 			Scanner sc = new Scanner(file);
 			int i = 0;
 			while (sc.hasNextLine()) {
