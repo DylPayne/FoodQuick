@@ -1,0 +1,15 @@
+Order number: 1625511243124
+Customer: Dylan
+Email: dylan
+Phone number: 079
+Location: Cape Town
+You have ordered the following: 
+2 x Pizza (R90) 
+
+Special Requirments: n
+ 
+Total: R90.0
+ 
+The closest driver to you is: Julie Carty
+39
+If you need the contact the restraunt, their number is 0791234567

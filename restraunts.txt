@@ -1,0 +1,8 @@
+0,Dylans Restaurant,Cape Town,0791234567
+1,Nicks Restaurant,Cape Town,0793217654
+2,Matts Restaurant,Witbank,0794326758
+3,Shauns Restaurant,Bloemfontein,0745678974
+4,Michelles Restaurant,Durban,0724357689
+5,Chaelas Restaurant,Springbok,0645437890
+6,Scotts Restaurant,Port Elizabeth,0124564321
+7,Reeces Restaurant,Johannesburg,0143265473

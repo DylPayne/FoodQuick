@@ -1,0 +1,4 @@
+1. Create classes
+
+2. Create toString methods (these will be used to enter the details into the text file invoice.txt
+
