@@ -33,7 +33,7 @@ public class Order extends Customer {
 	
 	static String closestDriver(String customerLocation) throws IOException {
 		
-		File file = new File("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/drivers.txt");
+		File file = new File("drivers.txt");
 		Scanner sc = new Scanner(file);
 		
 		int i = 0;
@@ -68,7 +68,7 @@ public class Order extends Customer {
 		
 		fileLines.set(i, tempListDriver[0] + ", " + tempListDriver[1] + ", " + numberOfDeliveries);
 		
-		PrintWriter pr = new PrintWriter("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/drivers.txt");
+		PrintWriter pr = new PrintWriter("drivers.txt");
 		
 		for (int j=0; j<fileLines.size(); j++) {
 			pr.println(fileLines.get(j));
@@ -84,7 +84,7 @@ public class Order extends Customer {
 		long orderNumber = System.currentTimeMillis();
 		
 		try {
-			FileInputStream file = new FileInputStream("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt");
+			FileInputStream file = new FileInputStream("restraunts.txt");
 			Scanner sc = new Scanner(file);
 			while (sc.hasNextLine()) {
 				System.out.println(sc.nextLine());
@@ -100,7 +100,7 @@ public class Order extends Customer {
 		System.out.println("Select a restraunt number from the list above: ");
 		String selectedRestraunt = sc.nextLine();
 		
-		String restrauntLine = Files.readAllLines(Paths.get("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/restraunts.txt")).get(Integer.parseInt(selectedRestraunt));
+		String restrauntLine = Files.readAllLines(Paths.get("restraunts.txt")).get(Integer.parseInt(selectedRestraunt));
 		String restrauntLineArray[] = restrauntLine.split(",");
 		String restrauntContactNumber = restrauntLineArray[3];
 		
@@ -155,7 +155,7 @@ public class Order extends Customer {
 		System.out.println(orderOutput);
 		
 		try {
-			FileWriter file = new FileWriter("/Users/dylanpayne/Dropbox/Dylan Payne-93778/2. Advanced Programming Concepts/Task 7/order.txt");
+			FileWriter file = new FileWriter("order.txt");
 			file.write(orderOutput);
 			file.close();
 		} catch (Exception e) {
