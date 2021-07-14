@@ -15,6 +15,10 @@ import java.io.FileReader;
 
 public class Order extends Customer {
 
+	public Order(String name, String number, String address, String location, String email) {
+			super(name, number, address, location, email);
+		}
+
 //	Attributes
 	static ArrayList<ArrayList<String>> orderItems = new ArrayList<ArrayList<String>>();
 	float orderPrice;
