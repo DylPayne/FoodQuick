@@ -10,6 +10,14 @@ public class Customer {
 	static String customerLocation;
 	static String customerEmail;
 	
+	public Customer(String name, String number, String address, String location, String email) {
+		customerName = name;
+		customerContactNumber = number;
+		customerAddress = address;
+		customerLocation = location;
+		customerEmail = email;
+	}
+	
 //	Method to print customer details
 	static void attributes() {
 		System.out.println("Name: " + customerName);

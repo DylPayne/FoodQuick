@@ -18,6 +18,12 @@ public class Restraunt {
 	static String restrauntLocation;
 	static String restrauntContactNumber;
 	
+	public Restraunt(String name, String location, String number) {
+		restrauntName = name;
+		restrauntLocation = location;
+		restrauntContactNumber = number;
+	}
+	
 //	Method to print attributes
 	void attributes() {
 		
